@@ -1,1 +1,2 @@
-0x09. C - Static libraries
+read me file for static libraries
+
