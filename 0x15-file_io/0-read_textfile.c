@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
 *read_textfile - read a text file and prints it
 *@filename: a pointer to the file to be a read
 *@letters: numbers of letters printed
 *Return: number of letters it read and printed otherwise return 0.
 */
-
 ssize_t_read_textfile(const char *filename, size_t letters){
     int fs;
     char *a;
