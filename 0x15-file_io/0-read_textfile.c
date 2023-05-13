@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * read_textfile - read a text file and prints it
  * @filename: a pointer to the file to be a read
@@ -8,9 +9,9 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    int fs;
+    ssize_t fs;
     char *a;
-    size_t r,w;
+    ssize_t r,w;
     if(!filename)
         return (0);
     a = malloc(sizeof(char) * (letters));
