@@ -6,13 +6,14 @@
  * Return: number of letters it read and printed otherwise return 0.
  */
 
-ssize_t read_textfile(const char *filename, size_t letters){
+ssize_t read_textfile(const char *filename, size_t letters)
+{
     int fs;
     char *a;
     size_t r,w;
     if(!filename)
         return (0);
-    a = malloc(sizeof(char) * letters);
+    a = malloc(sizeof(char) * (letters));
     if(a == NULL)
         return (0);
     fs = open(filename, O_RDONLY);
@@ -20,6 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters){
         return (0);
     r = read(fs, a, letters);
     w = write(STDOUT_FILENO, b, r);
+
     close(fs);
     free(a);
     return(w);
