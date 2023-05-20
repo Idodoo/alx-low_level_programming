@@ -11,5 +11,5 @@ int get_endianness(void){
     b = 1;
     n = (char *) &b;
      /* Return the value of the first byte to determine the endianness */
-    return ((int)*n);
+    return *n;
 }
