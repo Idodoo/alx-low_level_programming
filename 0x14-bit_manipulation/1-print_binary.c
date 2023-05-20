@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
-*prints the binary representation of a number
-*/
+ * print_binary - This is a function that prints a binary number without % or /
+ * @n: This is the  number to be printed
+ */
 
 void print_binary(unsigned long int n)
 {
