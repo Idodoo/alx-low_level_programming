@@ -2,11 +2,8 @@
 
 /**
  * read_textfile - read a text file and prints it
- *
  * @filename: a pointer to the file to be a read
- *
  * @letters: numbers of letters printed
- *
  * Return: number of letters it read and printed otherwise return 0.
  */
 
